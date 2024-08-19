@@ -299,7 +299,7 @@ def download_file(
         localpath.parent.mkdir(parents=True)
 
     if not out_cmd and localpath.exists():
-        print(f"[yellow]{localpath}[/yellow] is ready existed.")
+        print(f"[yellow]{localpath}[/yellow] already exists.")
         return
 
     dlink = api.download_link(remotepath)
